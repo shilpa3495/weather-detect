@@ -1,0 +1,44 @@
+.weather-body-container input {
+  border: 1px solid var(--grey-color);
+  border-radius: 0.375rem;
+  font-size: 1.125rem;
+  padding: 0.625rem;
+  width: -webkit-fill-available;
+  color: var(--black-color);
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
+.weather-body-container input::placeholder {
+  color: var(--grey-color);
+}
+
+.weather-or-text {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--grey-color);
+  line-height: 0.1em;
+  margin: 0.625rem 0 1.25rem;
+  color: var(--grey-color);
+}
+
+.weather-or-text span {
+  background: var(--white-color);
+  padding: 0 0.625rem;
+}
+
+.weather-button-container {
+  border: none;
+  background: var(--blue-color);
+  color: var(--white-color);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+}
+
+.weather-button-container:hover {
+  filter: brightness(110%);
+}
