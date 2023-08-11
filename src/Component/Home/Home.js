@@ -26,8 +26,9 @@ const Home = () => {
   };
 
   useEffect(() => {
+    const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
     if (debouncedInputTerm.length>=3) {
-      dispatch(getWeatherData(debouncedInputTerm));
+      dispatch(getWeatherData({debouncedInputTerm, apiKey}));
       setInput("")
       dispatch(setShowInfo(true))
     }

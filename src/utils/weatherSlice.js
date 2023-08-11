@@ -6,13 +6,13 @@ import { baseUrl } from "./constant";
 
 //read action
 
-const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
 
-export const getWeatherData = createAsyncThunk("getJob", async (input) => {
+
+export const getWeatherData = createAsyncThunk("getJob", async ({debouncedInputTerm, apiKey}) => {
   try {
     const response = await axios.get( baseUrl, {
       params: {
-        q: input,
+        q: debouncedInputTerm,
         appid: apiKey,
       },
       headers: {
