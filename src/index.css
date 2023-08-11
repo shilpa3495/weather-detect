@@ -38,3 +38,11 @@ body {
   color: var(--blue-color);
   font-weight: bold;
 }
+
+
+@media (max-width: 999px) {
+
+  .weather-app-container {
+    width: 70%;
+  }
+}
